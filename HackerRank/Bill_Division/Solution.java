@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/bon-appetit/problem?isFullScreen=true
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -16,13 +18,20 @@ class Result {
      * Complete the 'bonAppetit' function below.
      *
      * The function accepts following parameters:
-     * 1. INTEGER_ARRAY bill
-     * 2. INTEGER k
-     * 3. INTEGER b
+     *  1. INTEGER_ARRAY bill
+     *  2. INTEGER k
+     *  3. INTEGER b
      */
 
     public static void bonAppetit(List<Integer> bill, int k, int b) {
-        // Write your code here
+    // Write your code here
+        int sum = bill.stream().mapToInt(Integer::intValue).sum();
+        int bchar = (sum - bill.get(k))/2;
+        if (bchar == b) {
+            System.out.println("Bon Appetit");
+        } else {
+            System.out.println(Math.abs(bchar-b));
+        }
 
     }
 
@@ -39,8 +48,8 @@ public class Solution {
         int k = Integer.parseInt(firstMultipleInput[1]);
 
         List<Integer> bill = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+            .map(Integer::parseInt)
+            .collect(toList());
 
         int b = Integer.parseInt(bufferedReader.readLine().trim());
 
