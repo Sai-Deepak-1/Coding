@@ -21,7 +21,7 @@ To get started, follow these steps:
 
 1. Clone the repository to your local machine:
 ```
-git clone 
+git clone https://github.com/Sai-Deepak-1/Coding.git
 ```
 
 2. Navigate to the problem you're interested in.
@@ -45,7 +45,7 @@ Your contributions are valuable in helping others learn and grow in the world of
 
 ## Feedback
 
-If you have any feedback, suggestions, or questions about the repository, please don't hesitate to [open an issue](https://github.com/). Your feedback is greatly appreciated and will help in improving this resource.
+If you have any feedback, suggestions, or questions about the repository, please don't hesitate to [open an issue](https://github.com/Sai-Deepak-1/Coding/issues). Your feedback is greatly appreciated and will help in improving this resource.
 
 ## License
 
